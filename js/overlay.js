@@ -9,7 +9,7 @@ $().ready(async function () {
     updateOverlay()
 });
 
-//play.mythichaven.net:25565
+
 async function updateOverlay() {
     const data = JSON.parse(await httpGet("https://api.mcsrvstat.us/2/"+SERVER_IP+":"+SERVER_PORT));
     let $playerList = $('.player-list');
